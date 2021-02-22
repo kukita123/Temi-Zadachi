@@ -1,15 +1,64 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+/*
+ Условие:
+Разполагате със следния програмен код:
 
-namespace Tema1_Zadacha
+Program.cs
+n = int.Parse(Console.ReadLine);
+for (a = 1; a < 10 a++)
+for (int b = 1; b < 10; b++)
+for (int c = 1; c < 10; c++)
+if ((n % a != 0) ||& (n % b == 0) && (n % c = 0))
+Открийте и поправете грешките във вече написания програмен код, така че да се въвежда едно
+цяло число N и да се генерират всички възможни “специални” числа от 1111 до 9999.
+Допълнете кода.
+За да бъде “специално” едно число, то трябва да отговаря на следното условие:
+● N да се дели на всяка една от неговите цифри без остатък.
+Пример: при N = 16, 2418 е специално число:
+● 16 / 2 = 8 без остатък
+● 16 / 4 = 4 без остатък
+● 16 / 1 = 16 без остатък
+● 16 / 8 = 2 без остатък
+Вход:
+Входът се чете от конзолата и се състои от едно цяло число в интервала [1…600000].
+Изход:
+На конзолата трябва да се отпечатат всички “специални” числа, разделени с интервал.
+ *
+ */
+
+namespace Temi_Zadachi
 {
     class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Enter n -  number between 1 and 600000");
+            long n;
+            do
+            {
+                Console.Write("n=");
+                n = long.Parse(Console.ReadLine());
+            } while (n < 1 || n > 600000);
+
+
+            for (int a = 1; a < 10; a++)
+            {
+                for (int b = 1; b < 10; b++)
+                {
+                    for (int c = 1; c < 10; c++)
+                    {
+                        for (int d = 1; d < 10; d++)
+                        {
+                            if ((n % a == 0) && (n % b == 0) && (n % c == 0) && (n % d == 0))
+                            {
+                                Console.Write($"{a}{b}{c}{d} ");
+                            }
+                        }
+                    }
+                }
+            }
+            Console.WriteLine();
+            Console.ReadKey();
         }
     }
 }
