@@ -38,12 +38,53 @@ namespace Tema6_Zadacha
 
             Array.Sort(arr1New);
             Array.Sort(arr2New);
-            Array.Reverse(arr2New);        
+            Array.Reverse(arr2New);    
+            
+            
 
             Console.WriteLine(string.Join(" ", arr1New) + " " + string.Join(" ", arr2New));
+
+            //or:
+            var result = new int[input.Count()];
+            for (int i = 0; i < arr1New.Count(); i++)
+            {
+                result[i] = arr1New[i];
+            }
+            for (int i = 0; i < arr2New.Count(); i++)
+            {
+                result[result.Count() / 2 + i] = arr2New[i];
+            }
+            foreach (var item in result)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+
+            //or:
+            List<int> ListResult = new List<int>();
+            foreach (var item in arr1New)
+            {
+                ListResult.Add(item);
+            }
+            foreach (var item in arr2New)
+            {
+                ListResult.Add(item);
+            }
+            var ResultArray = ListResult.ToArray();
+            Console.WriteLine(String.Join(" ", ResultArray));
 
             Console.ReadKey();
             
         }
     }
 }
+/*
+7
+3 76 -1 33 2 22 98
+  
+10
+4 2 6 3 8 1 7 4 2 9  
+  
+  
+ 
+ */

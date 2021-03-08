@@ -212,10 +212,11 @@ namespace Tema5_Zadacha
         {
             if (start >= end)
                 return null;
+
             if (end - start > count)
                 return null;            
             
-            string[] result = new string[end - start];
+            string[] result = new string[end - start + 1];
             var current = head;
 
             for (int i = 0; i < start; i++)

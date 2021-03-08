@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema10-Zadacha", "Tema10-Za
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema4-Zadacha", "Tema4-Zadacha\Tema4-Zadacha\Tema4-Zadacha.csproj", "{17F807EA-C771-41E1-B84D-4885361A5FAF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema12-Zadacha", "Tema12-Zadacha\Tema12-Zadacha.csproj", "{89FC3C82-DE38-468A-835C-B091854501F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tema11-Zadacha", "Tema11-Zadacha\Tema11-Zadacha.csproj", "{7A9437D6-3437-4107-9ADB-D94D4AC63964}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +61,14 @@ Global
 		{17F807EA-C771-41E1-B84D-4885361A5FAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{17F807EA-C771-41E1-B84D-4885361A5FAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{17F807EA-C771-41E1-B84D-4885361A5FAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89FC3C82-DE38-468A-835C-B091854501F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89FC3C82-DE38-468A-835C-B091854501F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89FC3C82-DE38-468A-835C-B091854501F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89FC3C82-DE38-468A-835C-B091854501F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A9437D6-3437-4107-9ADB-D94D4AC63964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A9437D6-3437-4107-9ADB-D94D4AC63964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A9437D6-3437-4107-9ADB-D94D4AC63964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A9437D6-3437-4107-9ADB-D94D4AC63964}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
